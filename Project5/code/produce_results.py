@@ -40,7 +40,8 @@ def compare_one_dimensional():
 def compare_two_dimensional(num_cores=1):
     """Run the 2D simulation with all algorithms adn compare results to analytical."""
     method = "TwoDimensions"
-    dts = [0.6, 0.4]
+    # dts = [0.6, 0.4]
+    dts = [0.4]
     Nx = 50
     Nx = 100
     for dti in dts:

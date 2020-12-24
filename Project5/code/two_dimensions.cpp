@@ -97,16 +97,9 @@ void TwoDimensions::ResetMatrices()
         for (int j = 0; j <= 2*Nx-4; j++)
             completed[Index2D(i, 2*Nx-2, j)] = false;
     }
-    for (int row = 0; row <= Nx; row++) {
-        for (int col = 0; col <= Nx; col++)
-            u[0][Index2D(row, Nx+1, col)] = u[numCores][Index2D(row, Nx+1, col)];
-    }
-    for (int core = 1; core <= numCores; core++){
-        for (int row = 0; row <= Nx; row++) {
-            for (int col = 0; col<=Nx; col++)
-                u[core][Index2D(row, Nx+1, col)] = 0.0;
-        }
-    }
+    double *temp = u[0];
+    u[0] = u[numCores];
+    u[numCores] = temp;
 }
 
 void TwoDimensions::WriteMatrix()
