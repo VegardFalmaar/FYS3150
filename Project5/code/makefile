@@ -1,5 +1,5 @@
 compile:
-	g++ -o main.exe -Wall main.cpp forward_euler.cpp backward_euler.cpp crank_nicolson.cpp solvers.cpp tridiag.cpp two_dimensions.cpp -fopenmp -O3
+	g++ -o main.exe -Wall -fopenmp -O3 -std=c++17 main.cpp forward_euler.cpp backward_euler.cpp crank_nicolson.cpp solvers.cpp tridiag.cpp two_dimensions.cpp
 
 compile_test:
 	g++ -o unit_test.exe -Wall unit_test.cpp tridiag.cpp solvers.cpp forward_euler.cpp backward_euler.cpp crank_nicolson.cpp two_dimensions.cpp -fopenmp
