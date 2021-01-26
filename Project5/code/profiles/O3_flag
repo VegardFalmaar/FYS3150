@@ -1,0 +1,22 @@
+Duration of solve: 37360 milliseconds
+Simulating...
+    Result file: TwoDimensions-Nt999999-dt2_0e-05-Nx100
+      - Plotting evolution for dt = 2.00e-05
+      - Plotting error for dt = 2.00e-05
+------------------------------
+|MAPE =  2.86e-02%| t = 0.000|
+|MAPE =  6.10e-62%| t = 6.667|
+|MAPE = 2.45e-117%| t = 13.333|
+|MAPE = 3.46e-174%| t = 20.000|
+------------------------------
+Duration of solve: 37850 milliseconds
+Simulating...
+    Result file: TwoDimensions-Nt999999-dt2_0e-05-Nx100
+      - Plotting evolution for dt = 2.00e-05
+      - Plotting error for dt = 2.00e-05
+------------------------------
+|MAPE =  2.86e-02%| t = 0.000|
+|MAPE =  6.10e-62%| t = 6.667|
+|MAPE = 2.45e-117%| t = 13.333|
+|MAPE = 3.46e-174%| t = 20.000|
+------------------------------
